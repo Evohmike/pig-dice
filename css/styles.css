@@ -1,0 +1,14 @@
+.header h1{
+  text-align: center;
+  color: blue;
+}
+.header{
+  background-color: black;
+  height: 80%;
+}
+.rules{
+  margin-left: 35%;
+}
+.form{
+  margin-left: 35%;
+}
