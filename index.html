@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/styles.css">
-    <title> PIG DICE</title>
+    <title> PIG-DICE</title>
   </head>
   <body>
     <div class="container-fluid">
@@ -12,7 +12,7 @@
         <h1>WELCOME TO PIG DICE GAME</h1>
       </div>
       <div class="rules">
-        <h2>Here are the game Rules</h2>
+        <h2>Here are the game Rules:</h2>
         <p>Every player must first register to play this game.</p>
         <p>Each player's turn,that player repeatedly rolls a die until either 1 is rolled or the player decides to hold.</p>
         <ul>
@@ -32,23 +32,39 @@
             <label for="[object Object]">Player 2</label>
             <input type="text" name="" value="" id="player2">
           </div>
-          <button type="submit" id="submit"  class="btn btn-primary" name="button">Register here</button>
+          <button type="submit" id="submit"  class="btn btn-success" name="button">Register here</button>
         </form>
       </div>
 
       <div class="row">
         <div class="col-md-6 " >
           <div class="jumbotron">
-
+            <div id="aRolled"></div>
+            <div id="acurrentScore"></div>
+            <div id="afinalScore"></div>
           </div>
-
         </div>
 
       <div class="col-md-6">
         <div class="jumbotron">
-
+          <div id="bRolled"></div>
+          <div id="bcurrentScore"></div>
+          <div id="bfinalScore"></div>
         </div>
+      </div>
 
+      <div class="row">
+        <div class="col-md-4">
+          <button type="submit" name="button" class="btn btn-info" id="playDie1">player 1 turn</button>
+        </div>
+        <div class="col-md-4">
+          <button type="submit" class="btn btn-info" id="hold" name="button"> Hold</button>
+        </div>
+        <div class="col-md-4">
+          <button type="submit" class="btn btn-info" id="playDie2" name="button"> player 2 turn </button>
+        </div>
+        <div id="player1Score"></div>
+        <div id="player2Score"></div>
       </div>
 
     </div>

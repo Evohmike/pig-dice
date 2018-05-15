@@ -1,14 +1,30 @@
 .header h1{
   text-align: center;
-  color: blue;
+  color: white;
+  padding-top: 30px;
 }
+.container-fluid{
+  background-color: #A9A9A9;
+}
+
 .header{
-  background-color: black;
-  height: 80%;
+  background-color: #2F4F4F;
+  height: 100px;
 }
 .rules{
   margin-left: 35%;
 }
 .form{
   margin-left: 35%;
+}
+.jumbotron{
+  height: 250px;
+  color: red;
+}
+.form-group{
+  float: left;
+}
+
+.col-md-4{
+  text-align: center;
 }
