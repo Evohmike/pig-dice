@@ -60,5 +60,26 @@ $(document).ready(function() {
     player2.play();
     $('#bcurrentScore').append("Current scores is " + player2.score);
   });
-  
+  $("#hold").click(function(event) {
+    event.preventDefault();
+    if ($('#aRolled').is(':visible')) {
+      player1.hold();
+      $('#acurrentScore').empty();
+      $('#afinalScore').empty();
+      $('#afinalScore').append("Score for "+player1.name+" is " + player1.total);
+      $(".register").empty();
+      $('#playDie2').toggle();
+      $('#playDie1').toggle();
+      player1.winner();
+    } else {
+      player2.hold();
+      $('#bcurrentScores').empty();
+      $('#bfinalScore').empty();
+      $('#bfinalScore').append("Score for "+player2.name+" is " + player2.total);
+      $(".register").empty();
+      $('#playDie1').toggle();
+      $('#playDie2').toggle();
+      player2.winner();
+    }
+  });
 });
